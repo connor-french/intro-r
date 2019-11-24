@@ -5,9 +5,14 @@ Introduction to R
 
 ## Workshop objectives
 
+## Sections
+
 -----
 
-## Sections
+[Get Started \>\>\>](sections/01-introduction.md)  
+[Glossary \>\>\>](sections/glossary.md)
+
+-----
 
 ## Resources
 
