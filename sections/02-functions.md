@@ -20,4 +20,4 @@ Functions and arguments
 ## Default arguments
 
 [\<\<\< Previous](02-functions.md) | [Next \>\>\>](03-objects.md)  
-[Glossary](sections/glossary)
+[Glossary](glossary)

@@ -2,6 +2,9 @@
 title: "Objects"
 output: github_document
 ---
+
+[<<< Previous](03-objects.md) | [Next >>>](04-vectors.md)   
+
 # Object structure
 
 # Using objects
@@ -11,3 +14,6 @@ output: github_document
 ## Overwriting values
 
 # Making your own function
+
+[<<< Previous](03-objects.md) | [Next >>>](04-vectors.md)   
+[Glossary](glossary)
