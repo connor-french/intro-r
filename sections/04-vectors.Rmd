@@ -1,0 +1,16 @@
+---
+title: "Vectors"
+output: github_document
+---
+
+# What is a vector?
+
+# c() function
+
+# Functions that use vectors
+
+# Indexing
+
+# Names
+
+# Matrices

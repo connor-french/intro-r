@@ -1,0 +1,20 @@
+---
+title: "Functions and arguments"
+output: github_document
+---
+
+# Functions
+
+## Code body
+
+## Run a function
+
+## Help page
+
+# Arguments
+
+## args()
+
+## Matching arguments
+
+## Default arguments

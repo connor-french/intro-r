@@ -1,0 +1,11 @@
+---
+title: "Data types"
+output: github_document
+---
+
+# Data types
+## "Atomic" data types
+
+# typeof()
+
+# Getting it right
