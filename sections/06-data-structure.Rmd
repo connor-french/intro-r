@@ -3,6 +3,8 @@ title: "Data structure"
 output: github_document
 ---
 
+[<<< Previous](05-data-types.md) | [Next >>>](07-packages.md)   
+
 # Lists
 
 # Data frames
@@ -11,3 +13,5 @@ output: github_document
 
 ## Tibbles
 
+[<<< Previous](05-data-types.md) | [Next >>>](07-packages.md)   
+[Glossary](glossary.md)

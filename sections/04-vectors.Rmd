@@ -3,6 +3,8 @@ title: "Vectors"
 output: github_document
 ---
 
+[<<< Previous](03-objects.md) | [Next >>>](05-data-types.md)   
+
 # What is a vector?
 
 # c() function
@@ -14,3 +16,6 @@ output: github_document
 # Names
 
 # Matrices
+
+[<<< Previous](03-objects.md) | [Next >>>](05-data-types.md)   
+[Glossary](glossary.md)

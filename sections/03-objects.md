@@ -1,7 +1,7 @@
 Objects
 ================
 
-[\<\<\< Previous](03-objects.md) | [Next \>\>\>](04-vectors.md)
+[\<\<\< Previous](02-functions.md) | [Next \>\>\>](04-vectors.md)
 
 # Object structure
 
@@ -13,5 +13,5 @@ Objects
 
 # Making your own function
 
-[\<\<\< Previous](03-objects.md) | [Next \>\>\>](04-vectors.md)  
+[\<\<\< Previous](02-functions.md) | [Next \>\>\>](04-vectors.md)  
 [Glossary](glossary.md)

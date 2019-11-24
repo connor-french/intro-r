@@ -1,7 +1,7 @@
 Functions and arguments
 ================
 
-[\<\<\< Previous](02-functions.md) | [Next \>\>\>](03-objects.md)
+[\<\<\< Previous](01-introduction.md) | [Next \>\>\>](03-objects.md)
 
 # Functions
 
@@ -19,5 +19,5 @@ Functions and arguments
 
 ## Default arguments
 
-[\<\<\< Previous](02-functions.md) | [Next \>\>\>](03-objects.md)  
+[\<\<\< Previous](01-introduction.md) | [Next \>\>\>](03-objects.md)  
 [Glossary](glossary.md)

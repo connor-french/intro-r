@@ -1,6 +1,8 @@
 Importing data
 ================
 
+[\<\<\< Previous](07-packages.md) | [Next \>\>\>]()
+
 # Different data types you may read in
 
 ### Maybe organize by suffix? (e.g. .csv, .txt, .json, etc.)
@@ -8,3 +10,6 @@ Importing data
 # Reading in with RStudio
 
 # The tidyverse/readr package
+
+[\<\<\< Previous](07-packages.md) | [Next \>\>\>]()  
+[Glossary](glossary.md)

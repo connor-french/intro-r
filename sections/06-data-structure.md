@@ -1,10 +1,15 @@
 Data structure
 ================
 
+[\<\<\< Previous](05-data-types.md) | [Next \>\>\>](07-packages.md)
+
 # Lists
 
 # Data frames
 
+## Tidy data
+
 ## Tibbles
 
-## Tidy data
+[\<\<\< Previous](05-data-types.md) | [Next \>\>\>](07-packages.md)  
+[Glossary](glossary.md)
