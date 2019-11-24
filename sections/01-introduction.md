@@ -1,6 +1,8 @@
 Introduction
 ================
 
+[\<\<\< Previous](../README.md) | [Next \>\>\>](02-functions.md)
+
 -----
 
 > ## Learning Objectives
@@ -115,6 +117,9 @@ instance, you may want to create a `data/` directory within your working
 directory that stores the raw data, and have a `data_output/` directory
 for intermediate datasets and a `figure_output/` directory for the plots
 you will generate later.
+
+[\<\<\< Previous](../README.md) | [Next \>\>\>](02-functions.md)  
+[Glossary](sections/glossary)
 
 **Note**: The introductory material is copied and modified from [Data
 Carpentry](http://datacarpentry.org).

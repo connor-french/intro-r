@@ -3,6 +3,8 @@ title: "Functions and arguments"
 output: github_document
 ---
 
+[<<< Previous](02-functions.md) | [Next >>>](03-objects.md)
+
 # Functions
 
 ## Code body
@@ -18,3 +20,6 @@ output: github_document
 ## Matching arguments
 
 ## Default arguments
+
+[<<< Previous](02-functions.md) | [Next >>>](03-objects.md)   
+[Glossary](sections/glossary)

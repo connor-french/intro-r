@@ -1,6 +1,8 @@
 Functions and arguments
 ================
 
+[\<\<\< Previous](02-functions.md) | [Next \>\>\>](03-objects.md)
+
 # Functions
 
 ## Code body
@@ -16,3 +18,6 @@ Functions and arguments
 ## Matching arguments
 
 ## Default arguments
+
+[\<\<\< Previous](02-functions.md) | [Next \>\>\>](03-objects.md)  
+[Glossary](sections/glossary)

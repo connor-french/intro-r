@@ -3,9 +3,8 @@ title: "Introduction"
 output: github_document
 ---
 
-```{r, echo=FALSE, purl=FALSE}
-knitr::opts_chunk$set(results='hide')
-```
+[<<< Previous](../README.md) | [Next >>>](02-functions.md)
+
 ------------
 
 > ## Learning Objectives
@@ -108,6 +107,8 @@ to create a `data/` directory within your working directory that stores the raw
 data, and have a `data_output/` directory for intermediate datasets and a
 `figure_output/` directory for the plots you will generate later. 
 
+[<<< Previous](../README.md) | [Next >>>](02-functions.md)   
+[Glossary](sections/glossary)
 
 **Note**: The introductory material is copied and modified from [Data Carpentry](http://datacarpentry.org). [http://creativecommons.org/licenses/by/3.0/](http://creativecommons.org/licenses/by/3.0/).
 "Copyright (c) Data Carpentry"
