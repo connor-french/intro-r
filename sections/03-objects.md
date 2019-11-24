@@ -14,4 +14,4 @@ Objects
 # Making your own function
 
 [\<\<\< Previous](03-objects.md) | [Next \>\>\>](04-vectors.md)  
-[Glossary](glossary)
+[Glossary](glossary.md)

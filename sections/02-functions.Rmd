@@ -22,4 +22,4 @@ output: github_document
 ## Default arguments
 
 [<<< Previous](02-functions.md) | [Next >>>](03-objects.md)   
-[Glossary](glossary)
+[Glossary](glossary.md)
