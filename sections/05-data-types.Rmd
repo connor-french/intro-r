@@ -3,14 +3,60 @@ title: "Data types"
 output: github_document
 ---
 
-[<<< Previous](04-vectors.md) | [Next >>>](06-data-structure.md)   
+[\<\<\< Previous](04-vectors.md) | [Next \>\>\>](06-data-structure.md)
 
-# Data types
-## "Atomic" data types
+## Data types
 
-# typeof()
+R interprets the type of your vector based on the characteristics of its values. For instance, R can do math with vectors that contain numerical data:
 
-# Getting it right
+```{r}
+nums <- c(1, 2, 3)
 
-[<<< Previous](04-vectors.md) | [Next >>>](06-data-structure.md)   
+nums * 2
+```
+
+If you have a vector of character strings, R can count the number of characters in each string:
+
+```{r}
+sentence <- c("I", "love", "to", "code", "in", "R")
+
+nchar(sentence)
+```
+
+Each *data type* has its own unique properties.
+
+Here is a list of the different data types:
+
+* ``int`` stands for integers, or whole numbers.
+
+* ``dbl`` stands for doubles, or numbers with decimals.
+
+* ``chr`` stands for character vectors, or strings.
+
+* ``dttm`` stands for date-times (a date + a time).
+
+* ``lgl`` stands for logical, vectors that contain only TRUE or FALSE.
+
+* ``fctr`` stands for factors, which R uses to represent categorical variables with fixed possible values.
+
+* ``date`` stands for dates.
+
+## typeof()
+
+
+
+## Getting it right
+
+Vectors cannot contain more than one type of data. If you try, R will coerce your vector to a single data type that you weren't intending.
+
+```{r}
+mix_vec <- c(1, "two", 3L)
+
+mix_vec
+
+typeof(mix_vec)
+```
+
+
+[\<\<\< Previous](04-vectors.md) | [Next \>\>\>](06-data-structure.md)  
 [Glossary](glossary.md)
