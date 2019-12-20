@@ -27,7 +27,9 @@ You should install R and RStudio.
 ##### Windows:
 
 1.  Go to <https://cloud.r-project.org/bin/windows/base/>
-2.  Click the “Download R 3.6.1 for Windows” link.
+2.  Click the “Download R 3.6.1 for Windows” link. ![Screenshot of
+    Windows
+    download](https://github.com/connor-french/intro-r/blob/master/images/installr.jpg)
 3.  When the file finishes downloading, double-click to install. You
     should be able to click “Next” to all dialogs to finish the
     installation.
@@ -35,10 +37,20 @@ You should install R and RStudio.
 ##### Mac:
 
 1.  Go to <https://cloud.r-project.org/bin/macosx/>
-2.  Click the link “R-3.6.1.pkg”
+2.  Click the link “R-3.6.1.pkg” ![Screenshot of MacOSX
+    download](https://github.com/connor-french/intro-r/blob/master/images/rmac.png)
 3.  When the file finishes downloading, double-click to install. You
     should be able to click “Next” to all dialogs to finish the
     installation.
+
+Note: For MacOSX users, you might have to install XQuartz before you are
+able to run the application. You can follow the instructions on the R
+download page to the XQuartz download page. You should be able to click
+“Continue” to all dialogs to finish the installation. ![Screenshot of
+XQuartz
+download](https://github.com/connor-french/intro-r/blob/master/images/rmacX0.png)
+![Screenshot of XQuartz install
+dialog](https://github.com/connor-french/intro-r/blob/master/images/rmacX1.png)
 
 ##### Linux:
 
@@ -52,10 +64,19 @@ Mint (19).
 1.  Go to [the RStudio download
     page](https://www.rstudio.com/products/rstudio/download/#download).
 2.  Under “Installers for Supported Platforms” select the appropriate
-    installer for your operating system
+    installer for your operating system ![Screenshot of Windows RStudio
+    page](https://github.com/connor-french/intro-r/blob/master/images/rstudio2windows.png)
+    ![Screenshot of MacOSX RStudio
+    page](https://github.com/connor-french/intro-r/blob/master/images/rstudio.png)
 3.  When the file finishes downloading, double-click to install. You
     should be able to click “Next” to all dialogs to finish the
-    installation.
+    installation. ![Screenshot of Windows RStudio dialog
+    page](https://github.com/connor-french/intro-r/blob/master/images/rstudio1.png)
+
+Note: MacOSX users can drop the RStudio application into their
+application folder directly. ![Screenshot of MacOSX dropping RStudio
+into application
+folder](https://github.com/connor-french/intro-r/blob/master/images/rstudio2.png)
 
 ### “I have R installed”
 
@@ -96,6 +117,12 @@ library(installr)
     updating old packages to the new R installation.”  
 3.  From within RStudio, go to Help \> Check for Updates to install
     newer version of RStudio (if available, optional).
+
+Note: If this function does not work, you will have to download the
+latest R directly from <https://cloud.r-project.org/bin/windows/base/>.
+Prior to installing the newest version, it is recommended that you
+uninstall the current version and then follow the instructions for
+“Installing R.”
 
 ##### Mac
 
