@@ -1,4 +1,4 @@
-03-objects
+Objects
 ================
 
 [\<\<\< Previous](02-functions.md) | [Next \>\>\>](04-vectors.md)
