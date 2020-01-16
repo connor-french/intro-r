@@ -25,19 +25,136 @@ take_avg <- function(x){
 
 # Functions
 
+When we want to make something happen in R, we can call a function. Most
+functions will produce results that you can see immediately, such as the
+square root function in R. The function `sqrt()` is part of the base R
+package that comes with your installation of R.
+
+``` r
+sqrt(16)
+```
+
+    ## [1] 4
+
 ## Code body
+
+Typing the name of the function sans the paranthesis (as it is seen
+above), e.g. just `mean`, will return the code that is stored in the
+function.
+
+``` r
+mean
+```
+
+    ## function (x, ...) 
+    ## UseMethod("mean")
+    ## <bytecode: 0x7fe1b8e45898>
+    ## <environment: namespace:base>
 
 ## Run a function
 
+To run the function, you will have to add the paranthesis behind the
+function name, e.g. `sum()`. If an input is needed for the function to
+run, you will insert in between the paranthesis. Different functions can
+require different kinds of input.
+
+``` r
+sum(1,3,7,9,4)
+```
+
+    ## [1] 24
+
 ## Help page
+
+Adding a ? in front of a function will open up the documentation for
+that particular function. It can help explain what that function can do
+and serves as a pretty useful help page when you are learning or
+troubleshooting.
+
+``` r
+?sum
+```
 
 # Arguments
 
+The input you provide for your function are called arguments. Some
+functions take a single argument while others take multiple.
+
+``` r
+#Example of a function that takes a single argument:
+factorial(3)
+```
+
+    ## [1] 6
+
+``` r
+#Example of a function that takes multiple arguments:
+paste("Hello", " World!", sep = "")
+```
+
+    ## [1] "Hello World!"
+
 ## args()
+
+This `args()` function tell you what arguments a function recognizes.
+
+``` r
+#For example:
+args(sum)
+```
+
+    ## function (..., na.rm = FALSE) 
+    ## NULL
+
+From the output of `args(sum)`, we know that this function takes 2
+arguments. The names of these inputs are helpful when we are looking
+them up in the documentation page. For example, in the case of `?sum` we
+can find out from the documentation that the argument `na.rm` is asking
+if missing values should be removed when this funciton is called.
 
 ## Matching arguments
 
+You can also use the names of the arguments to specify the input within
+the function. If you don’t use argument names, R will match your inputs
+based on the order that they are written.
+
+``` r
+log(100, 10) 
+```
+
+    ## [1] 2
+
+``` r
+#is different from 
+log(10, 100)
+```
+
+    ## [1] 0.5
+
+``` r
+#specifying your input with the argument names can help avoid potential errors
+log(x = 100, base = 10)
+```
+
+    ## [1] 2
+
+``` r
+log(base = 100, x = 10)
+```
+
+    ## [1] 0.5
+
 ## Default arguments
+
+Some arguments are optional, such as `base` in `log()`. In the case of
+an optional argument, you need not supply a value and the function will
+still run. In this case, the `base` argument has a default value of
+exp(1) and if you do not provide an alternative base value it will use
+its default value. However, the argument of x is not optional and
+requires an input or it will not run.
+
+Tutorial based off [R Studio
+Primers](https://rstudio.cloud/learn/primers)
 
 [\<\<\< Previous](01-introduction.md) | [Next \>\>\>](03-objects.md)  
 [Glossary](glossary.md)
