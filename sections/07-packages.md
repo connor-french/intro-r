@@ -8,9 +8,6 @@ R packages are collections of functions and data sets developed by the
 community. They increase the power of R by improving existing base R
 functionalities, or by adding new ones.
 
-Much of the source material for this section comes from
-[here](https://www.datacamp.com/community/tutorials/r-packages-guide).
-
 ## What is a package?
 
 A package is a suitable way to organize your own work and, if you want
@@ -345,6 +342,38 @@ remember more. Here’s a list of some of the topics:
 
 ![](/Users/connorfrench/Dropbox/Old_Mac/School_Stuff/CUNY/GCDI/intro-r/images/cran-task-view.png)
 
+## The tidyverse
+
+For the rest of the Intro to R workshop and the next two workshops, you
+are going to work with the **tidyverse** ecosystem of R packages. From
+the [website](https://www.tidyverse.org/): “The tidyverse is an
+opinionated collection of R packages designed for data science. All
+packages share an underlying design philosophy, grammar, and data
+structures.” Each package within this ecosystem work seemlessy together
+to make data science tasks like data import, tidying, manipulation,
+visualisation, and programming more accessible while retaining
+performance. A number of packages exist in the tidyverse, but here are a
+few that we will use:
+
+  - [readr](https://readr.tidyverse.org/) for importing data,
+
+  - [dplyr](https://dplyr.tidyverse.org/) and
+    [tidyr](https://tidyr.tidyverse.org/) for manipulating data, and
+
+  - [ggplot2](https://ggplot2.tidyverse.org/) for visualizing data
+
+The packages are focused on performing each step leading up to modeling
+and communicating in the data science framework outlined in [R for Data
+Science](https://r4ds.had.co.nz/)
+
+![](../images/tidyverse-flow.png)
+
+There is a short, easy to read
+[paper](https://tidyverse.tidyverse.org/articles/paper.html) now out on
+the tidyverse and tidy principles that I encourage you to read\! For
+now, suffice it to say that the tidyverse makes working in R easier to
+learn and more human readable, so we’re using it for these workshops.
+
 ### Wrap up challenge
 
 **Exercise 2**
@@ -353,8 +382,8 @@ Another package in the `tidyverse` ecosystem is the `tidyr` package. We
 will explore this package in the Data Wrangling workshop. Let’s take a
 quick glance to get a feel for it.
 
-1)  Read the DESCRIPTION file for `tidyr`. Read the description to get
-    an idea of what it does.
+1)  Read the DESCRIPTION file for `tidyr` to get an idea of what it
+    contains.
 
 2)  Load the package into your R session.
 
@@ -415,6 +444,9 @@ Or, since the package is loaded:
 ``` r
 browseVignettes(package = "tidyr")
 ```
+
+Much of the source material for this section comes from [this Data Camp
+article](https://www.datacamp.com/community/tutorials/r-packages-guide).
 
 [\<\<\< Previous](06-data-structure.md) | [Next
 \>\>\>](08-importing-data.md)
