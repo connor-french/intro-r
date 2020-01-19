@@ -15,7 +15,7 @@ Introduction
 >   - Organize files and directories for a set of analyses as an R
 >     Project.
 > 
->   - ## Use the built-in RStudio help interface to search for more information on R functions.
+>   - Use the built-in RStudio help interface to search for more information on R functions.
 
 # Basics of R
 
