@@ -9,13 +9,30 @@ Introduction
 > 
 >   - Describe the purpose of RStudio’s script, console, environment,
 >     and file/plot/help windows.
+> 
 >   - Create an R project.
+> 
 >   - Organize files and directories for a set of analyses as an R
 >     Project.
->   - Use the built-in RStudio help interface to search for more
->     information on R functions.
+> 
+>   - ## Use the built-in RStudio help interface to search for more information on R functions.
 
------
+# Basics of R
+
+R is a versatile, open source programming/scripting language that’s
+useful both for statistics but also data science.
+
+  - **Open source** software under GPL.
+  - R has over 7,000 user contributed packages at this time. It’s widely
+    used both in academia and industry.
+  - Available on all platforms.
+  - Not just for statistics, but also general purpose programming.
+  - For people who have experience in programmming: R is both an
+    object-oriented and a so-called [functional
+    language](http://adv-r.had.co.nz/Functional-programming.html)
+  - Large and growing community of peers.
+  - You can use R as it is but combining it with the RStudio interface
+    will help with organization and also provide us with extra options.
 
 # Presentation of RStudio
 
@@ -27,10 +44,51 @@ Start RStudio – Let’s start by learning about our tool.
   - Our end goal is not just to “do stuff” but to do it in a way that
     anyone can easily and exactly replicate our workflow and results.
 
+## RStudio layout
+
+Let’s learn where things are and what we can do\!
+
+  - How do you a) open a new R script window?
+  - How do you b) search for the documentation of the function `sum`?
+
+![The console, scripts, environment, and plots windows on
+RStudio](https://github.com/connor-french/intro-r/blob/master/images/RStudioLayout.png)
+
+  - Bottom left: **console window.** Here is where R is waiting for you
+    to tell it what to do, and where it will show the results of a
+    command. You can type commands directly after the “\>” prompt and R
+    will execute the command. Commands written in this window will be
+    forgotten after you close the RStudio session.
+
+  - Top left: **scripts/editor window.** In this R script window, you
+    can write, edit, and save your R commands. Here you can have a
+    complete record of what you did, and you can easily share with
+    others how you did it and you can do it again later on if needed.
+    The RStudio script editor allows you to ‘send’ the current line or
+    the currently selected text to the R console for execution by
+    clicking `Run` or by using the `Command-Enter` (for MacOS) or
+    `Ctrl-Enter` (for PCs) shortcuts. You can also run the full R
+    script.
+
+  - Top right: **environment/workspace/history window.** Here you can
+    see what data and values R has in its memory. You can view and edit
+    these values by clicking on them. In the history tab, it shows you
+    what you have typed before.
+
+  - Bottom right: **files/plots/packages/help window.** The files tab
+    shows you your current working directory’s file and folder
+    structure. The is usually where your project file is saved. The
+    plots tab will show you resulting graphs/figures that you execute.
+    The packages tab will list all the packages that are installed. If
+    the package is loaded, a check-mark will appear next to it. The help
+    tab will show you the documentation for the R functions, datasets,
+    and packages which is helpful for when you come across code that you
+    aren’t sure about.
+
 # Before we get started
 
   - Under the `File` menu, click on `New project`, choose `New
-    directory`, then `Empty project`
+    directory`, then `New/Empty project`
   - Enter a name for this new folder, and choose a convenient location
     for it. This will be your **working directory** for the rest of the
     day (e.g., `~/intro-r`)
@@ -39,12 +97,12 @@ Start RStudio – Let’s start by learning about our tool.
     created. Use the `Browse` button to navigate folders if changes are
     needed.
   - Click on “Create project”
-  - In your terminal (tab on the bottom left), first make sure that
-    you’re in your `~/intro-r` directory. If not, navigate there.
-    Then, create a folder named `data` within your newly created working
+  - In your console (window on the bottom left), first make sure that
+    you’re in your `~/intro-r` directory. If not, navigate there. Then,
+    create a folder named `data` within your newly created working
     directory. (e.g., `~/intro-r/data`)
   - Create a new R script (File \> New File \> R script) and save it in
-    your working directory (e.g. `intro-r-script.R`)
+    your working directory (e.g. `intro-r-script.R`)
 
 Your working directory should now look like this:
 
@@ -55,17 +113,6 @@ lesson](../images/r_starting_how_it_should_like.png)
 
 There are two main ways of interacting with R: using the console or by
 using script files (plain text files that contain your code).
-
-The console window (in RStudio, the bottom left panel) is the place
-where R is waiting for you to tell it what to do, and where it will show
-the results of a command. You can type commands directly into the
-console, but they will be forgotten when you close the session. It is
-better to enter the commands in the script editor, and save the script.
-This way, you have a complete record of what you did, you can easily
-show others how you did it and you can do it again later on if needed.
-You can copy-paste into the R console, but the Rstudio script editor
-allows you to ‘send’ the current line or the currently selected text to
-the R console using the `Command-Enter` shortcut (`Ctrl-Enter` for PCs).
 
 If R is ready to accept commands, the R console shows a `>` prompt. If
 it receives a command (by typing, copy-pasting or sent from the script
@@ -93,21 +140,6 @@ Your console chould look like this:
 If you keep pressing enter, more `+` will appear. To fix this, close the
 parentheses with `)` to evaluate the expression, or <kbd>Esc</kbd> or
 `Ctrl-C` to escape and leave the expression unevaluated.
-
-# Basics of R
-
-R is a versatile, open source programming/scripting language that’s
-useful both for statistics but also data science.
-
-  - **Open source** software under GPL.
-  - R has over 7,000 user contributed packages at this time. It’s widely
-    used both in academia and industry.
-  - Available on all platforms.
-  - Not just for statistics, but also general purpose programming.
-  - For people who have experience in programmming: R is both an
-    object-oriented and a so-called [functional
-    language](http://adv-r.had.co.nz/Functional-programming.html)
-  - Large and growing community of peers.
 
 ## Organizing your working directory
 
