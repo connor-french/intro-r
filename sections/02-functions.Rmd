@@ -280,4 +280,3 @@ From [this blog post](https://www.r-bloggers.com/r-three-dots-ellipsis/): "...it
 Material modified from [R Studio Primers](https://rstudio.cloud/learn/primers) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
 
 [<<< Previous](01-introduction.md) | [Next >>>](04-vectors.md)   
-[Glossary](glossary.md)
