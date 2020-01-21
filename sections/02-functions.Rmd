@@ -3,7 +3,7 @@ title: "Objects and Functions"
 output: github_document
 ---
 
-[<<< Previous](01-introduction.md) | [Next >>>](03-objects.md)
+[<<< Previous](01-introduction.md) | [Next >>>](04-vectors.md)
 
 ```{r, echo=FALSE, results='hide'}
 ### This is some code I stole off of stackoverflow answer to limit the number of lines that get output from a chunk (https://stackoverflow.com/questions/23114654/knitr-output-hook-with-an-output-lines-option-that-works-like-echo-26/23147563#23147563)
@@ -279,5 +279,5 @@ From [this blog post](https://www.r-bloggers.com/r-three-dots-ellipsis/): "...it
 
 Material modified from [R Studio Primers](https://rstudio.cloud/learn/primers) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
 
-[<<< Previous](01-introduction.md) | [Next >>>](03-objects.md)   
+[<<< Previous](01-introduction.md) | [Next >>>](04-vectors.md)   
 [Glossary](glossary.md)
