@@ -1,143 +1,264 @@
 ---
-title: "04-vectors"
+title: "Vectors and data types"
 output: github_document
 ---
 
 [<<< Previous](03-objects.md) | [Next >>>](05-data-types.md)   
 
 # What is a vector?
-A vector in R is a basic data structure with an one-dimensional array, that is, it contains elements of the same type. The data types can include logical (e.g. yes/no), chracters (e.g. "apple", "ball"), and intergers (e.g. "3", "999") amongst others. One of the property of a vector is its length, and length is basically the number of elements in the vector. A vector can have a single element or multiple elements, and you can find the length of the vector, i.e. the number of elements in the vector with the function ```length()```.
+A vector is the most basic data structure in R and is foundational to coding in R. A vector is a series of values that all have the same *data type*. We will elaborate on data types later, but numbers and characters are two examples. 
 
-The length of the vector ```10``` is 1 because there is only 1 element in this vector, while the length of the vector
+A numeric vector looks like this
 ```{r}
-rnorm(10)
+my_vector <- c(1, 2, 3, 4)
+
+#print the vector
+my_vector
 ```
-is 10 because it has 10 elements in this vector.
+
+A character vector looks like this
+```{r}
+char_vector <- c("I", "love", "to", "code", "in", "R.")
+
+char_vector
+```
+
+Vectors are one-dimensional. Adding another dimension (e.g. a 2 x 2 grid) makes it a *matrix*. Since they're one-dimensional, you can count the number of elements in a vector with the ```length()``` function.
+
+```{r}
+length(char_vector)
+```
 
 ## c() function
-```c()``` function helps to combine the values specified within the parenthesis into a vector. This can be very useful for creating data sets or when applying the same function on a series of elements. Note that all elements in the vectors have to be of the same type; if they are different, this function will attempt to coerce them into the same elements.
+The ```c()``` function combines its arguments into a vector. This can be very useful for creating data sets or when applying the same function on a series of elements. 
+
 ```{r}
 b <- c(1, 2, 3, 4)
-fruits <- c("pear", "apple", "banana", "melon")
-b
-fruits
+
+# You can add one to each element of the vector
+b + 1
 ```
-You can also assign each value a name when creating your vectors.
+
+You can also name the elements in your vector to increase their accessibility.
+
 ```{r}
 c <- c(pop = 10, soda = 20, cola = 30)
+
 c
 ```
-Try and figure out what the following do before running them in R. If you don't know what type of data is in your vector, how might you be able to find out? 
-```{r eval=FALSE}
-c(1:10)
-typeof(fruits)
+
+You can even combine existing vectors! For instance, you may obtain vectors from two different data sets that you want to combine for a single analysis.
+
+```{r}
+char_vector_2 <- c("But", "Python", "is", "ok", "too.")
+
+c(char_vector, char_vector_2)
 ```
+
+Note that all elements in the vectors have to be of the same type; if they are different, this function will attempt to coerce them into the same elements.
+
+**Exercise 1**
+
+You have a vector of limb measurements from your favorite frog species. 
+
+```{r}
+limb_meas <- c(humerus = 10, femur = 20, tibiofibula = 25)
+
+limb_meas
+```
+
+However, you eventually want to compare these measurements with other frog species and limb measurements are highly correlated with body size. You want to correct for this.
+
+Body size is 40 mm. 
+
+```{r}
+body_size <- 40
+```
+
+The easiest way to correct for body size is to divide each measurement by the body size. Do this so you can compare these measures with those you collect from other species.
+
+-----
+
+I keep referring to data types. What are they?
+
+## Data types
+
+R interprets the type of your vector based on the characteristics of its values. 
+
+Each *data type* has its own unique properties.
+
+Here is a list of the different data types:
+
+* ``int`` stands for integers, or whole numbers.
+
+* ``dbl`` stands for doubles, or numbers with decimals.
+
+* ``chr`` stands for character vectors, or strings.
+
+* ``dttm`` stands for date-times (a date + a time).
+
+* ``lgl`` stands for logical, vectors that contain only TRUE or FALSE.
+
+* ``fctr`` stands for factors, which R uses to represent categorical variables with fixed possible values.
+
+* ``date`` stands for dates.
+
+## typeof()
+
+```typeof()``` is a handy function that returns the data type of your vector. If you're ever in doubt, check your vector with ```typeof()```!
+
+```{r}
+dec <- c(3.24, 5.4, 2.04, 6.55)
+
+typeof(dec)
+```
+
+## Getting it right
+
+Vectors cannot contain more than one type of data. If you try, R will coerce your vector to a single data type that you weren't intending.
+
+```{r}
+mix_vec <- c(1, "two", 3L)
+
+mix_vec
+
+typeof(mix_vec)
+```
+
 
 ## Functions that use vectors
-Some functions require vectors. For example, the ```mean()``` function computes the mean of a vector and the ```sum()``` computes the total.
+Some functions require vectors. For example, the ```mean()``` function computes the mean of a vector.
+
 ```{r echo=TRUE}
-mean(b)
-sum(b)
+my_nums <- c(3, 5, 5)
+
+mean(my_nums)
 ```
 
-### Vectorised functions
-Many R functions will also take on a vector input. This tells R to apply the function separately onto each element in the input and return the results as a new vector (which you can also save into a new object as we learned from the previous section).
+### Vectorized functions
+Many R functions are *vectorized*. This means that when a vector with more than one element is provided as input, the function will apply separately for each element in the vector and return the results as a new vector. Take the ```factorial()``` function (the factorial of 4 is 4 * 3 * 2 * 1 = 24). It takes the factorial of each number in ```my_nums```.
+
 ```{r}
-factorial(b)
+factorial(my_nums)
 ```
+
+Math is vectorized in R, as you've already seen. 
+
 You can apply some functions to multiple vectors, and R will apply the function to each vector's elements in order until it reaches the end of the vector.
+
+For instance, the ```pmax``` function finds the maximum among pairwise comparisons of each element in a set of vectors. For instance,
 ```{r}
-vec<-c(1,2,3,4,5)
-vec2<-c(4,3,2,6,8)
+vec <- c(1, 2, 3, 4, 5)
+
+vec2 <- c(4, 3, 2, 6, 8)
+
 pmax(vec, vec2)
-
-```
-What do you think will happen when you do this:
-```{r eval=FALSE}
-10+vec2
 ```
 
-Let's try a quick exercise to practice and familiarize ourselves with the R codes so far! Try creating a vector with 5 elements, apply a function on it, and save the results into a new object.
+**Exercise 2**
 
-## Locating an element in a vector
-What happens if you wanted to look for a specific element in a vector that has multiple elements? You could use ```[]``` to help you locate and extract that element in a specific vector. You can also specify multiple extractions using the ```c()``` function within ```[]```.
+You have two vectors that contain the words in a sentence.
+
 ```{r}
-z <- c(1:5, 23, 34:57)
-z[17] #this is telling R to look for the 17th element in the vector z and to return that result, which in this case is the number 44.
-z[c(1,7,26)] #can you explain what this is doing?
+sentence_1 <- c("I", "want", "a", "pet", "turtle")
+
+sentence_2 <- c("It", "will", "be", "green", "and", "brown")
 ```
-If you have a name for your elements, you can also specify the extraction using its name. Can you try to extract the element named cola in the vector c?
+
+1) Count the number of words in each sentence.
+
+2) Concatenate the two vectors and assign them to a new object (for simplicity, call it ```sentences```). 
+
+3) Now for a tricky task. Count the number of letters in the combined sentences. Some hints: Use the ```nchar()``` function to count the number of letters in each word. You will need to assign an intermediate variable. 
+
+
+## Subsetting vectors
+What do you do if you wanted to extract a specific element or elements in a vector? Square brackets ```[]``` with one or more indices inside allow you to do this. 
 ```{r}
-c <- c(pop = 10, soda = 20, cola = 30)
+z <- c(10, 11, 12, 13, 14, 15)
+
+z[3] 
+```
+
+This is telling R to look for the 3rd element in the vector z and to return that result, which in this case is the number 12.
+
+You can also use multiple indices to retrieve more than one element using the ```c()``` function within ```[]```.
+
+```{r}
+z[c(1, 4, 5)]
+```
+
+This extracts the first, fourth, and fifth elements in the ```z``` vector. 
+
+**Exercise 3**
+
+Let's take our favorite sentence (I'm reassigning it here for clarity)
+
+```{r}
+sentence_1 <- c("I", "want", "a", "pet", "turtle")
+```
+
+Create a new object that contains all of the words that contain more than one letter. Note- use numerical indexing to do this. You don't need to use the ```nchar()``` function. Just eyeball the words.
+
+
+We will revisit subsetting in more detail in the next section.
+
+### Put it all together
+
+**Exercise 4**. Answers at the bottom.
+
+You're interested in whether modern Western households stick to the "three meals a day" norm that has persisted since the middle ages. Work demands have increased and you think that people may be sherking a meal in favor of more work time. In a preliminary survey of your apartment complex, you surveyed four households and asked how many meals each member consumes on average each day. 
+
+Complete the following to analyze your preliminary data.
+
+1) Check your data vectors to make sure you are indeed working with numeric data.
+```{r}
+# hh = household
+hh_1 <- c(2, 3, 3)
+hh_2 <- c(3, 2, 2, 3)
+hh_3 <- c(2, 4)
+hh_4 <- c(3, 2)
 ```
 
 
-# Writing your own function
-Now that we have gone over some of the basic components in a piece of R code, let's try to write a function! This is not as intimidating or scary as it seems, and can be very useful as it can be made very specific to your data set. 
+2) Take the average of each household using the ```take_avg()``` function you created earlier. Assign each one to a unique object.
+3) Create a new vector of your averages.
+4) Visualize your new household averages using the ```barplot()``` function. Just put your object from step 3) inside the function, e.g. ```barplot(hh_averages)```. 
+5) Since you're interested in average across households, take the average of your household averages. What does your preliminary survey tell you?
+
+## The guts of a function
+Now that we have gone over some of the basic components in a piece of R code, let's write a function! This is not as intimidating or scary as it seems, and can be very useful if you are performing the same set of tasks over and over again. Although writing functions is a useful skill, the main purpose of this section is to impress upon you that functions aren't magic black boxes that take input, perform magic, then give something back.
 
 In writing your own function, it follows a fairly standard template [^1] 
 ```{r}
-function.name <- function(arg1, arg2, arg3=2) {
-  newVar <- sum(arg1) + sum(arg2)  # do some useful stuff
-  return(newVar / arg3) # returns value 
+function_name <- function(arg_1, arg_2, arg_3 = 2) {
+  
+  # do some useful stuff
+  new_var <- sum(arg_1) + sum(arg_2) 
+  
+  # do some more useful stuff
+  div_out <- new_var / arg_3
+  
+  # return the value
+  return(div_out) 
 }
 ```
 
-```function.name``` is the name of the funciton you're creating. Name it something that is easy to remember but does not clash with existing functions in base R packages such as ```mean()``` or ```sum()```.
+```function_name``` is the name of the funciton you're creating. Name it something that is easy to remember but does not clash with existing functions in base R packages such as ```mean()``` or ```sum()```. Although not all R functions do this, it is good practice to use verbs for function names.
 
-```arg1``` are arguments for the function you are defining. Much like the arguments of the functions you called in [Functions](02-functions.md), it can be any R object such as numbers, vectors, and data frames. In this template, ```arg3``` has a default of 2, which makes it an option argument when you call and apply the function.
+```arg_1```, ```arg_2```, and ```arg_3``` are your arguments. ```arg_1``` and ```arg_2``` are mandatory because they have no default values, while ```arg_3``` has a default value of 2, so it does not have to be specified.
 
-```{}``` is called the function body and it specifies the code that will run when the function is called and applied. When writing your own function, try to be as short as you can. Remember, functions are to help make your work run more efficiently! In the example above, the code is creating a new variable, ```newVar``` that is the result of the sums of ```arg1``` and ```arg2``` and than dividing ```newVar``` by ```arg3``` as the result for this function. 
+```{}``` is called the function body and it specifies the code that will run when the function is called and applied. All of the code in your function needs to fall between the two curly brackets. When writing your own function, try to be concise, but clear. Remember, functions are to help make your work run more efficiently!
 
 ```return``` is the last line of code that will return the value of the function. Remember this last line of *code* is written within the ```{}```!
 
-## Practice! Let's make a mean function!
-Using what we have learnt so far, can you attempt to create a function to find the mean of a vector? Think about the components that is needed to find a mean from a set of numbers. Hint: $$mean = \frac{sum of terms}{no. ofterms}$$
+## Function to take an average.
 
-
- 
-# Matrices
-Matrices are not too different from vectors. All it has that is different is an added dimensionality; it has rows and columns. The arguments ```nrow``` and ```ncol``` are important to the creation of a matrix as it specifies the desired number of rows and columns the matrix will take on. Specifying one of the arguments is sufficient for the arrangement.
-```{r}
-ma1 <- matrix(1:9, nrow = 3, ncol = 3) #is the same as
-ma2 <- matrix(1:9, nrow = 3)
-ma1
-ma2
-```
-
-## Naming rows and columns
-You could name your rows and columns as you are creating the matrix or after the matrix is created.
-```{r}
-ma1 <- matrix(1:9, nrow = 3, dimnames = list(c("a","b","c"), c("x","y","z")))
-ma1
-
-colnames(ma2) <- c("x","y","z")
-ma2
-```
-Try changing the row names of ma2! 
-
-## Creating a matrix from vectors
-You can create a matrix from a vector by specifying its dimensions (i.e. its rows and columns) using ```dim()```.
-```{r}
-vec3 <- c(5,6,3,7,7,3,7,9)
-vec3
-dim(vec3) <- c(2,4)
-vec3
-```
-You can also use the functions rowbind, ```rbind()```, or column bind, ```cbind```, to place two vectors into a matrix.
-```{r}
-x <- c(5, 3, 7, 7)
-y <- c(6, 7, 3, 9)
-
-#Which function could you use to get the same matrix as vec3?
-```
-
-
-Possible solution to writing a function exercise:
+Here you're making your own version of the ```mean()``` function, called ```take_avg()```. 
 ```{r}
 take_avg <- function(x){
   
-  # this function takes the same of all values in x. Assumes x is numerical
+  # this function takes the same of all values in x. Assumes x is a numeric vector
   s <- sum(x)
   
   # this counts the number of elements in x
@@ -152,9 +273,126 @@ take_avg <- function(x){
 ```
 
 
+Let's take the average of a random vector of doubles.
+```{r}
+v <- c(2.4, 3.65, 7.5, 1.22)
+
+take_avg(v)
+```
+
+Super cool! Well, at least I think so. To take a deeper dive into writing your own functions, check out [this excellent chapter in R for Data Science](https://r4ds.had.co.nz/functions.html).
+
+## Recap exercise
+**Exercise 4**
+
+
+You're interested in whether modern Western households stick to the "three meals a day" norm that has persisted since the middle ages. Work demands have increased and you think that people may be sherking a meal in favor of more work time. In a preliminary survey of your apartment complex, you surveyed four households and asked how many meals each member consumes on average each day. 
+
+Complete the following to analyze your preliminary data.
+
+1) Check your data vectors to make sure you are indeed working with numeric data.
+```{r}
+# hh = household
+hh_1 <- c(2, 3, 3)
+hh_2 <- c(3, 2, 2, 3)
+hh_3 <- c(2, 4)
+hh_4 <- c(3, 2)
+```
+
+
+2) Take the average of each household using the ```take_avg()``` function you created earlier. Assign each one to a unique object.
+3) Create a new vector of your averages.
+4) Visualize your new household averages using the ```barplot()``` function. Just put your object from step 3) inside the function, e.g. ```barplot(hh_averages)```. 
+5) Since you're interested in average across households, take the average of your household averages. What does your preliminary survey tell you?
+
+
+
+## Answers
+
+**Exercise 1**
+
+R is a vectorized language. Just like with the addition you performed earlier, you can simply divide your body measurement vector by body size (which happens to be a vector with a single element).
+
+```{r}
+limb_meas_corrected <- limb_meas / body_size
+
+limb_meas_corrected
+```
+
+**Exercise 2**
+
+1) 
+```{r}
+# number of words in sentence 1
+length(sentence_1)
+
+# number of words in sentence 2
+length(sentence_2)
+```
+
+2)
+```{r}
+sentences <- c(sentence_1, sentence_2)
+
+sentences
+```
+
+3)
+```{r}
+# count the number of letters in each word
+letter_count <- nchar(sentences)
+
+# get the total number of letters
+num_letters <- sum(letter_count)
+
+num_letters
+```
+
+**Exercise 3**
+```{r}
+big_words <- sentence_1[c(2, 4, 5)]
+
+big_words
+```
+
+
+**Exercise 4**
+
+1)
+```{r, collapse=TRUE}
+typeof(hh_1)
+typeof(hh_2)
+typeof(hh_3)
+typeof(hh_4)
+```
+
+2)
+```{r}
+hh_avg_1 <- take_avg(hh_1)
+hh_avg_2 <- take_avg(hh_2)
+hh_avg_3 <- take_avg(hh_3)
+hh_avg_4 <- take_avg(hh_4)
+```
+
+3) 
+```{r}
+all_avgs <- c(hh_avg_1, hh_avg_2, hh_avg_3, hh_avg_4)
+all_avgs
+```
+
+4)
+```{r}
+barplot(all_avgs)
+```
+
+5)
+```{r}
+take_avg(all_avgs)
+```
+
 
 
 [<<< Previous](03-objects.md) | [Next >>>](05-data-types.md)   
 [Glossary](glossary.md)
 
-[^1]: Modified template from [Nice R Code](https://nicercode.github.io/guides/functions/)
+[^1]: Modified template from [Nice R Code](https://nicercode.github.io/guides/functions/) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
