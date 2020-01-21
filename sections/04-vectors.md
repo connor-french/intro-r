@@ -1,7 +1,7 @@
 Vectors and data types
 ================
 
-[\<\<\< Previous](03-objects.md) | [Next \>\>\>](05-data-types.md)
+[\<\<\< Previous](02-functions.md) | [Next \>\>\>](06-data-structure.md)
 
 # What is a vector?
 
@@ -561,7 +561,7 @@ take_avg(all_avgs)
 
     ## [1] 2.666667
 
-[\<\<\< Previous](03-objects.md) | [Next \>\>\>](05-data-types.md)  
+[\<\<\< Previous](02-functions.md) | [Next \>\>\>](06-data-structure.md)  
 [Glossary](glossary.md)
 
 1.  Modified template from [Nice R
