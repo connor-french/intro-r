@@ -562,7 +562,6 @@ take_avg(all_avgs)
     ## [1] 2.666667
 
 [\<\<\< Previous](02-functions.md) | [Next \>\>\>](06-data-structure.md)  
-[Glossary](glossary.md)
 
 1.  Modified template from [Nice R
     Code](https://nicercode.github.io/guides/functions/) and [Data
