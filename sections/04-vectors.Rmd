@@ -393,6 +393,5 @@ take_avg(all_avgs)
 
 
 [<<< Previous](02-functions.md) | [Next >>>](06-data-structure.md)   
-[Glossary](glossary.md)
 
 [^1]: Modified template from [Nice R Code](https://nicercode.github.io/guides/functions/) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
