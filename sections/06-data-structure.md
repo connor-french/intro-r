@@ -1,7 +1,7 @@
 Data structure
 ================
 
-[\<\<\< Previous](05-data-types.md) | [Next \>\>\>](07-packages.md)
+[\<\<\< Previous](04-vectors.md) | [Next \>\>\>](07-packages.md)
 
 The primary data structures in R are vectors (which we’ve already
 introduced), lists, and data frames. Data frames are the *de facto* way
@@ -357,5 +357,5 @@ typeof(restaurant_list$restaurant)
 
 **Exercise 2** Multiple variables are stored in one column.
 
-[\<\<\< Previous](05-data-types.md) | [Next \>\>\>](07-packages.md)  
+[\<\<\< Previous](04-vectors.md) | [Next \>\>\>](07-packages.md)  
 [Glossary](glossary.md)
