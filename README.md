@@ -115,7 +115,6 @@ objectives of this workshop are to
 -----
 
 [Get Started \>\>\>](sections/01-introduction.md)  
-[Glossary \>\>\>](sections/glossary.md)
 
 |                                                        |
 | ------------------------------------------------------ |
