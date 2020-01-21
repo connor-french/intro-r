@@ -3,7 +3,7 @@ title: "Vectors and data types"
 output: github_document
 ---
 
-[<<< Previous](03-objects.md) | [Next >>>](05-data-types.md)   
+[<<< Previous](02-functions.md) | [Next >>>](06-data-structure.md)   
 
 # What is a vector?
 A vector is the most basic data structure in R and is foundational to coding in R. A vector is a series of values that all have the same *data type*. We will elaborate on data types later, but numbers and characters are two examples. 
@@ -392,7 +392,7 @@ take_avg(all_avgs)
 
 
 
-[<<< Previous](03-objects.md) | [Next >>>](05-data-types.md)   
+[<<< Previous](02-functions.md) | [Next >>>](06-data-structure.md)   
 [Glossary](glossary.md)
 
 [^1]: Modified template from [Nice R Code](https://nicercode.github.io/guides/functions/) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
