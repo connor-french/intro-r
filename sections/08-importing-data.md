@@ -355,4 +355,3 @@ Some of the source material for this section comes from Hadley Wickham’s
 [R for Data Science](https://r4ds.had.co.nz/).
 
 [\<\<\< Previous](07-packages.md) | [Next \>\>\>]()  
-[Glossary](glossary.md)
