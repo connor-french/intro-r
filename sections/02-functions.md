@@ -1,7 +1,7 @@
 Objects and Functions
 ================
 
-[\<\<\< Previous](01-introduction.md) | [Next \>\>\>](03-objects.md)
+[\<\<\< Previous](01-introduction.md) | [Next \>\>\>](04-vectors.md)
 
 ## Creating objects
 
@@ -481,5 +481,5 @@ Material modified from [R Studio
 Primers](https://rstudio.cloud/learn/primers) and [Data
 Carpentry](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
 
-[\<\<\< Previous](01-introduction.md) | [Next \>\>\>](03-objects.md)  
+[\<\<\< Previous](01-introduction.md) | [Next \>\>\>](04-vectors.md)  
 [Glossary](glossary.md)
