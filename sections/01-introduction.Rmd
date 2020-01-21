@@ -2,10 +2,6 @@
 title: "Introduction"
 output: github_document
 ---
----
-title: "Introduction"
-output: github_document
----
 
 [<<< Previous](../README.md) | [Next >>>](02-functions.md)
 
@@ -134,7 +130,6 @@ Note: Don't just double click the .R file or open the .R file in RStudio without
 -----
 
 [<<< Previous](../README.md) | [Next >>>](02-functions.md)   
-[Glossary](glossary.md)
 
 -----
 

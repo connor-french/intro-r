@@ -358,4 +358,3 @@ typeof(restaurant_list$restaurant)
 **Exercise 2** Multiple variables are stored in one column.
 
 [\<\<\< Previous](04-vectors.md) | [Next \>\>\>](07-packages.md)  
-[Glossary](glossary.md)

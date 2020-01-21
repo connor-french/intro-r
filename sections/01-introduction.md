@@ -196,7 +196,6 @@ things may break.
 -----
 
 [\<\<\< Previous](../README.md) | [Next \>\>\>](02-functions.md)  
-[Glossary](glossary.md)
 
 -----
 

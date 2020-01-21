@@ -413,4 +413,5 @@ take_avg(all_avgs)
 
 -----
 
+
 [^1]: Modified template from [Nice R Code](https://nicercode.github.io/guides/functions/) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
