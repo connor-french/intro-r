@@ -151,7 +151,6 @@ for intermediate datasets and a `figure_output/` directory for the plots
 you will generate later.
 
 [\<\<\< Previous](../README.md) | [Next \>\>\>](02-functions.md)  
-[Glossary](glossary.md)
 
 **Note**: The introductory material is copied and modified from [Data
 Carpentry](http://datacarpentry.org).
