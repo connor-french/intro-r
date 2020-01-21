@@ -2,10 +2,6 @@
 title: "Introduction"
 output: github_document
 ---
----
-title: "Introduction"
-output: github_document
----
 
 [<<< Previous](../README.md) | [Next >>>](02-functions.md)
 
@@ -119,7 +115,6 @@ data, and have a `data_output/` directory for intermediate datasets and a
 `figure_output/` directory for the plots you will generate later. 
 
 [<<< Previous](../README.md) | [Next >>>](02-functions.md)   
-[Glossary](glossary.md)
 
 **Note**: The introductory material is copied and modified from [Data Carpentry](http://datacarpentry.org). [http://creativecommons.org/licenses/by/3.0/](http://creativecommons.org/licenses/by/3.0/).
 "Copyright (c) Data Carpentry"
