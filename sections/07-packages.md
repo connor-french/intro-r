@@ -222,6 +222,8 @@ package. But first, an exercise.
 Do you remember how to see an overview of what functions and data are
 contained in a package? Try this with `dplyr`.
 
+-----
+
 To access the band instruments dataset inside the `dplyr` package you
 just type:
 
@@ -374,6 +376,56 @@ the tidyverse and tidy principles that I encourage you to read\! For
 now, suffice it to say that the tidyverse makes working in R easier to
 learn and more human readable, so we’re using it for these workshops.
 
+### Short reproducibility note
+
+When you are approaching the end of a project and are planning to
+publish your code and results, it’s a good idea to include a metadata
+file with your published code. This metadata file should include
+information about your session that others may need to accurately
+reproduce your analysis. This includes information about your R version,
+computer platform, what packages you used, etc. Fortunately, R makes
+this easy with the `sessionInfo()` function.
+
+``` r
+sessionInfo()
+```
+
+    ## R version 3.6.0 (2019-04-26)
+    ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
+    ## Running under: macOS High Sierra 10.13.6
+    ## 
+    ## Matrix products: default
+    ## BLAS:   /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRblas.0.dylib
+    ## LAPACK: /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRlapack.dylib
+    ## 
+    ## locale:
+    ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+    ## 
+    ## attached base packages:
+    ## [1] stats     graphics  grDevices utils     datasets  methods   base     
+    ## 
+    ## other attached packages:
+    ## [1] dplyr_0.8.3
+    ## 
+    ## loaded via a namespace (and not attached):
+    ##  [1] Rcpp_1.0.3        fansi_0.4.1       utf8_1.1.4        crayon_1.3.4     
+    ##  [5] digest_0.6.23     assertthat_0.2.1  R6_2.4.1          magrittr_1.5     
+    ##  [9] evaluate_0.14     pillar_1.4.3      cli_2.0.1         rlang_0.4.2.9001 
+    ## [13] stringi_1.4.3     vctrs_0.2.99.9000 rmarkdown_1.16    tools_3.6.0      
+    ## [17] stringr_1.4.0     glue_1.3.1        purrr_0.3.3       xfun_0.11        
+    ## [21] yaml_2.2.0        compiler_3.6.0    pkgconfig_2.0.3   htmltools_0.4.0  
+    ## [25] tidyselect_0.2.5  knitr_1.26        tibble_2.1.3
+
+To write this to a file, use the `capture.output()` function. If you’re
+curious about this function, try `?capture.output()`.
+
+``` r
+si <- sessionInfo()
+
+# feel free to put this in a different folder if you're trying to stay neat.
+capture.output(si, file = "session_info.txt")
+```
+
 ### Wrap up challenge
 
 **Exercise 2**
@@ -391,6 +443,8 @@ quick glance to get a feel for it.
 
 4)  Skim the “Pivoting” vignette to get a feel of what a vignette
     contains.
+
+-----
 
 ## Answers
 
@@ -445,8 +499,12 @@ Or, since the package is loaded:
 browseVignettes(package = "tidyr")
 ```
 
-Much of the source material for this section comes from [this Data Camp
-article](https://www.datacamp.com/community/tutorials/r-packages-guide).
+-----
 
 [\<\<\< Previous](06-data-structure.md) | [Next
 \>\>\>](08-importing-data.md)
+
+-----
+
+Much of the source material for this section comes from [this Data Camp
+article](https://www.datacamp.com/community/tutorials/r-packages-guide).

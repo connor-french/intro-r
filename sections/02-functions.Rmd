@@ -66,6 +66,8 @@ c) 1st_try
 
 d) fish.scale.size
 
+-----
+
 You might have noticed that assigning a value to an object doesn't print anything. To print the value, you can either use parentheses around the assignment or type the object name:
 
 ```{r}
@@ -103,6 +105,7 @@ If you want to change an object's value, just assign it a new one. Your object's
 
 Create a new object called ```weight_kg``` and assign it the value **70**. Now, divide it by two and convert it to pounds, using the conversion factor **2.2**. Assign this new value to the object ```weight_lb```.
 
+-----
 
 ## Functions
 When you want to make something happen in R, you can call a function. Most functions will produce results that you can see immediately, such as the ```sqrt()``` (square root) function in R. ```sqrt()``` is part of the base R package that comes with your installation of R. 
@@ -136,6 +139,8 @@ From the output of ```args(round)```, we know that this function takes 2 argumen
 **Exercise 3**
 
 See what arguments are within the ```sum()``` function. One of them is ```...``` (ellipsis). Use Google to figure out what the ```...``` argument means.
+
+-----
 
 ### Matching arguments
 You can also use the names of the arguments to specify the input. If you don't use argument names, R will match your inputs based on the order that they are written. 
@@ -243,6 +248,8 @@ Here are some more resources to help you get help.
 
 I'll probably link to this book many times, but [R for Data Science](https://r4ds.had.co.nz/) is a great reference.
 
+-----
+
 ## Answers
 
 **Exercise 1** 
@@ -274,10 +281,11 @@ args(sum)
 
 From [this blog post](https://www.r-bloggers.com/r-three-dots-ellipsis/): "...it means that the function is designed to take any number of named or unnamed arguments."
 
+-----
 
+[<<< Previous](01-introduction.md) | [Next >>>](04-vectors.md)   
 
+-----
 
 Material modified from [R Studio Primers](https://rstudio.cloud/learn/primers) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
 
-[<<< Previous](01-introduction.md) | [Next >>>](04-vectors.md)   
-[Glossary](glossary.md)

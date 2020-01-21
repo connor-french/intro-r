@@ -133,6 +133,7 @@ read_csv("a,b\n1,2,3\n4,5,6")
 read_csv("a;b\n1;3")
 ```
 
+-----
 
 ## Reading in other types of data
 
@@ -166,11 +167,13 @@ Click on the "Import Dataset" tab and you should see this dropdown menu:
 
 ![](../images/import-data-dropdown.png)
 
-Click what type of file you are importing --I chose "From Text (readr)"-- and a screen like this should appear:
+Click what type of file you are importing -- I chose "From Text (readr)" -- and a screen like this should appear:
 
 ![](../images/import-data-screen.png)
 
 It's as easy as browsing to your desired file and clicking "Import"! This does have some nice features. There is a Preview pane to get a quick look at your data. There are Import Options on the bottom that reflect arguments you would typically supply to the ```read_csv()``` function (or whatever function is being used). My favorite part of this feature is the Code Preview in the bottom right corner. Copying and pasting that into your R script will make your data import decisions more reproducible. 
+
+-----
 
 ## Answers
 
@@ -208,7 +211,11 @@ R didn't throw up an error, but the output isn't as expected. "a" and "b" should
 read_csv2("a;b\n1;3")
 ```
 
-Some of the source material for this section comes from Hadley Wickham's [R for Data Science](https://r4ds.had.co.nz/).
+-----
 
 [<<< Previous](07-packages.md) | [Next >>>]()   
-[Glossary](glossary.md)
+
+-----
+
+Some of the source material for this section comes from Hadley Wickham's [R for Data Science](https://r4ds.had.co.nz/).
+

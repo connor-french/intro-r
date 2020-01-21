@@ -228,6 +228,8 @@ read_csv("a,b\n1,2,3\n4,5,6")
 read_csv("a;b\n1;3")
 ```
 
+-----
+
 ## Reading in other types of data
 
 Sometimes you may need to import non-rectangular data or proprietary
@@ -278,8 +280,8 @@ Click on the “Import Dataset” tab and you should see this dropdown menu:
 
 ![](../images/import-data-dropdown.png)
 
-Click what type of file you are importing –I chose “From Text (readr)”–
-and a screen like this should appear:
+Click what type of file you are importing – I chose “From Text (readr)”
+– and a screen like this should appear:
 
 ![](../images/import-data-screen.png)
 
@@ -291,6 +293,8 @@ function (or whatever function is being used). My favorite part of this
 feature is the Code Preview in the bottom right corner. Copying and
 pasting that into your R script will make your data import decisions
 more reproducible.
+
+-----
 
 ## Answers
 
@@ -351,8 +355,11 @@ read_csv2("a;b\n1;3")
     ##   <dbl> <dbl>
     ## 1     1     3
 
+-----
+
+[\<\<\< Previous](07-packages.md) | [Next \>\>\>]()
+
+-----
+
 Some of the source material for this section comes from Hadley Wickham’s
 [R for Data Science](https://r4ds.had.co.nz/).
-
-[\<\<\< Previous](07-packages.md) | [Next \>\>\>]()  
-[Glossary](glossary.md)

@@ -139,6 +139,8 @@ After a package is installed, you are ready to use its functionalities. If you j
 
 Do you remember how to see an overview of what functions and data are contained in a package? Try this with ```dplyr```.
 
+----
+
 To access the band instruments dataset inside the ```dplyr``` package you just type:
 
 ```{r}
@@ -220,6 +222,25 @@ The packages are focused on performing each step leading up to modeling and comm
 
 There is a short, easy to read [paper](https://tidyverse.tidyverse.org/articles/paper.html) now out on the tidyverse and tidy principles that I encourage you to read! For now, suffice it to say that the tidyverse makes working in R easier to learn and more human readable, so we're using it for these workshops.
 
+
+### Short reproducibility note
+When you are approaching the end of a project and are planning to publish your code and results, it's a good idea to include a metadata file with your published code. This metadata file should include information about your session that others may need to accurately reproduce your analysis. This includes information about your R version, computer platform, what packages you used, etc. Fortunately, R makes this easy with the ```sessionInfo()``` function. 
+
+```{r}
+sessionInfo()
+```
+
+
+To write this to a file, use the ```capture.output()``` function. If you're curious about this function, try ```?capture.output()```.
+```{r, eval=FALSE}
+si <- sessionInfo()
+
+# feel free to put this in a different folder if you're trying to stay neat.
+capture.output(si, file = "session_info.txt")
+```
+
+
+
 ### Wrap up challenge
 
 **Exercise 2**
@@ -235,6 +256,7 @@ Another package in the ```tidyverse``` ecosystem is the ```tidyr``` package. We 
 4) Skim the "Pivoting" vignette to get a feel of what a vignette contains.
 
 
+-----
 
 ## Answers
 
@@ -281,7 +303,11 @@ browseVignettes(package = "tidyr")
 ```
 
 
+-----
+
+[<<< Previous](06-data-structure.md) | [Next >>>](08-importing-data.md) 
+
+-----
 
 Much of the source material for this section comes from [this Data Camp article](https://www.datacamp.com/community/tutorials/r-packages-guide).
 
-[<<< Previous](06-data-structure.md) | [Next >>>](08-importing-data.md) 

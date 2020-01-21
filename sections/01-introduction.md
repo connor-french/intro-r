@@ -9,13 +9,13 @@ Introduction
 > 
 >   - Describe the purpose of RStudio’s script, console, environment,
 >     and file/plot/help windows.
-> 
 >   - Create an R project.
-> 
 >   - Organize files and directories for a set of analyses as an R
 >     Project.
-> 
->   - Use the built-in RStudio help interface to search for more information on R functions.
+>   - Use the built-in RStudio help interface to search for more
+>     information on R functions.
+
+-----
 
 # Basics of R
 
@@ -102,11 +102,11 @@ RStudio](https://github.com/connor-french/intro-r/blob/master/images/RStudioLayo
     create a folder named `data` within your newly created working
     directory. (e.g., `~/intro-r/data`)
   - Create a new R script (File \> New File \> R script) and save it in
-    your working directory (e.g. `intro-r-script.R`)
+    your working directory (e.g. `intro-r-script.R`)
 
 Your working directory should now look like this:
 
-![How it should look like at the beginning of this
+![How it should look at the beginning of this
 lesson](../images/r_starting_how_it_should_like.png)
 
 # Interacting with R
@@ -115,10 +115,9 @@ There are two main ways of interacting with R: using the console or by
 using script files (plain text files that contain your code).
 
 If R is ready to accept commands, the R console shows a `>` prompt. If
-it receives a command (by typing, copy-pasting or sent from the script
-editor using <kbd>Ctrl</kbd>-<kbd>Enter</kbd>), R will try to execute
-it, and when ready, show the results and come back with a new `>` prompt
-to wait for new commands.
+it receives a command, R will try to execute it, and when ready, show
+the results and come back with a new `>` prompt to wait for new
+commands.
 
 If R is still waiting for you to enter more data because it isn’t
 complete yet, the console will show a `+` prompt. It means that you
@@ -141,17 +140,65 @@ If you keep pressing enter, more `+` will appear. To fix this, close the
 parentheses with `)` to evaluate the expression, or <kbd>Esc</kbd> or
 `Ctrl-C` to escape and leave the expression unevaluated.
 
-## Organizing your working directory
+## Using script files
 
-You should separate the original data (raw data) from intermediate
-datasets that you may create for the need of a particular analysis. For
-instance, you may want to create a `data/` directory within your working
-directory that stores the raw data, and have a `data_output/` directory
-for intermediate datasets and a `figure_output/` directory for the plots
-you will generate later.
+One of the highlights of RStudio is the text editor. It contains a lot
+of handy features that make coding easier. For now, we’ll just use some
+basic features.
+
+Let’s open a new R script. In the top left corner of your RStudio
+window, there should be a paper icon with a green plus sign over it.
+Click on it and select “R Script” from the dropdown menu. A new blank
+script should appear in your top left pane. This is essentially a text
+file, but since it has a “.R” extension, you can use it to “talk” to
+your R console. What I mean is that instead of typing commands directly
+into the console or copying and pasting, you can run code directly from
+the script.
+
+A nice feature of R is that it is interactive. You can run a single line
+of code at time without needing to run the entire script.
+
+Lets do some math in your script. Type `3 + 3` into your R script. Place
+your cursor at the end of the line and press
+<kbd>Cmd</kbd>-<kbd>Enter</kbd> (<kbd>Ctrl</kbd>-<kbd>Enter</kbd> if you
+have a Windows). You should now see the output in your R console\! If
+you want to run more than one line of code, you can highlight the code
+you want to run and press <kbd>Cmd</kbd>-<kbd>Enter</kbd>.
+
+Now, let’s save our script with File -\> Save or File -\> Save As. R
+should default to your working directory. Save it wherever the .RProj
+file is located.
+
+Now, quit your RStudio session. You may be confronted with a message
+that asks “Save Workspace Image?” ALWAYS SAY NO. It will create
+headaches if you save it. It takes forever if you have a lot of stuff in
+your environment and writes all of your objects to disk. While saving
+everything you’re working with may sound like a good idea, but you’re
+now responsible for remembering what each file is for. Also, what R
+saves may not actually reflect what was in your environment. Just
+suffice it to say that saving your workspace image is a bad idea.
+
+We’re gonna learn how to open your R project again. There are two
+avenues:
+
+1)  Double click your .RProj file. This will open your R project in a
+    new window and everything will be there ready to go.
+
+2)  Open RStudio. RStudio may automatically open your most recent
+    project. In that case, you don’t have to do anything. Otherwise, go
+    to File -\> Open Project and navigate to your .RProj file. Open this
+    and you’ll be good to go\!
+
+Note: Don’t just double click the .R file or open the .R file in RStudio
+without opening your .RProj first. If you don’t open your R Project,
+things may break.
+
+-----
 
 [\<\<\< Previous](../README.md) | [Next \>\>\>](02-functions.md)  
 [Glossary](glossary.md)
+
+-----
 
 **Note**: The introductory material is copied and modified from [Data
 Carpentry](http://datacarpentry.org).

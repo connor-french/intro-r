@@ -85,6 +85,7 @@ We assume no previous knowledge of R or any other programming language with this
 [Glossary >>>](sections/glossary.md)
 
 -----
+
 ## Resources
 
 [RStudio primers](https://rstudio.cloud/learn/primers)      

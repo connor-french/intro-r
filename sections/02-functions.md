@@ -81,6 +81,8 @@ Which of the following object names is *invalid*?
 
 4)  fish.scale.size
 
+-----
+
 You might have noticed that assigning a value to an object doesn’t print
 anything. To print the value, you can either use parentheses around the
 assignment or type the object name:
@@ -151,6 +153,8 @@ Create a new object called `weight_kg` and assign it the value **70**.
 Now, divide it by two and convert it to pounds, using the conversion
 factor **2.2**. Assign this new value to the object `weight_lb`.
 
+-----
+
 ## Functions
 
 When you want to make something happen in R, you can call a function.
@@ -217,6 +221,8 @@ whole number if you don’t supply the `digits` argument with a value.
 
 See what arguments are within the `sum()` function. One of them is `...`
 (ellipsis). Use Google to figure out what the `...` argument means.
+
+-----
 
 ### Matching arguments
 
@@ -434,6 +440,8 @@ more](https://community.rstudio.com/)
 I’ll probably link to this book many times, but [R for Data
 Science](https://r4ds.had.co.nz/) is a great reference.
 
+-----
+
 ## Answers
 
 **Exercise 1**
@@ -477,9 +485,12 @@ post](https://www.r-bloggers.com/r-three-dots-ellipsis/): “…it means
 that the function is designed to take any number of named or unnamed
 arguments.”
 
+-----
+
+[\<\<\< Previous](01-introduction.md) | [Next \>\>\>](04-vectors.md)
+
+-----
+
 Material modified from [R Studio
 Primers](https://rstudio.cloud/learn/primers) and [Data
 Carpentry](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
-
-[\<\<\< Previous](01-introduction.md) | [Next \>\>\>](04-vectors.md)  
-[Glossary](glossary.md)

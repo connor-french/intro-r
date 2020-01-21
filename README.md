@@ -117,11 +117,15 @@ objectives of this workshop are to
 [Get Started \>\>\>](sections/01-introduction.md)  
 [Glossary \>\>\>](sections/glossary.md)
 
-|                                                        |
-| ------------------------------------------------------ |
-| \#\# Resources                                         |
-| [RStudio primers](https://rstudio.cloud/learn/primers) |
-| [R for Data Science](https://r4ds.had.co.nz/)          |
+-----
+
+## Resources
+
+[RStudio primers](https://rstudio.cloud/learn/primers)
+
+[R for Data Science](https://r4ds.had.co.nz/)
+
+-----
 
 **Note**: This material is copied and modified from [Data
 Carpentry](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html).

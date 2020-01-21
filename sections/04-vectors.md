@@ -99,8 +99,8 @@ limb_meas
     ##          10          20          25
 
 However, you eventually want to compare these measurements with other
-frog species and limb measurements are highly correlated with body size.
-You want to correct for this.
+frog species, and limb measurements are highly correlated with body
+size. You want to correct for this.
 
 Body size is 40 mm.
 
@@ -172,6 +172,18 @@ typeof(mix_vec)
 
     ## [1] "character"
 
+**Quick exercise**
+
+Check the type of this vector:
+
+``` r
+mix_nums <- c(1L, 2L, 2.5, 3)
+```
+
+What type does it evaluate to?
+
+-----
+
 ## Functions that use vectors
 
 Some functions require vectors. For example, the `mean()` function
@@ -238,6 +250,8 @@ sentence_2 <- c("It", "will", "be", "green", "and", "brown")
     number of letters in each word. You will need to assign an
     intermediate variable.
 
+-----
+
 ## Subsetting vectors
 
 What do you do if you wanted to extract a specific element or elements
@@ -278,11 +292,13 @@ Create a new object that contains all of the words that contain more
 than one letter. Note- use numerical indexing to do this. You don’t need
 to use the `nchar()` function. Just eyeball the words.
 
+-----
+
 We will revisit subsetting in more detail in the next section.
 
 ### Put it all together
 
-**Exercise 4**. Answers at the bottom.
+**Exercise 4**
 
 You’re interested in whether modern Western households stick to the
 “three meals a day” norm that has persisted since the middle ages.
@@ -308,13 +324,18 @@ hh_4 <- c(3, 2)
 
 2)  Take the average of each household using the `take_avg()` function
     you created earlier. Assign each one to a unique object.
+
 3)  Create a new vector of your averages.
+
 4)  Visualize your new household averages using the `barplot()`
     function. Just put your object from step 3) inside the function,
     e.g. `barplot(hh_averages)`.
+
 5)  Since you’re interested in average across households, take the
     average of your household averages. What does your preliminary
     survey tell you?
+
+-----
 
 ## The guts of a function
 
@@ -434,6 +455,8 @@ hh_4 <- c(3, 2)
     average of your household averages. What does your preliminary
     survey tell you?
 
+-----
+
 ## Answers
 
 **Exercise 1**
@@ -550,7 +573,7 @@ all_avgs
 barplot(all_avgs)
 ```
 
-![](04-vectors_files/figure-gfm/unnamed-chunk-31-1.png)<!-- -->
+![](04-vectors_files/figure-gfm/unnamed-chunk-32-1.png)<!-- -->
 
 5)  
 <!-- end list -->
@@ -561,8 +584,11 @@ take_avg(all_avgs)
 
     ## [1] 2.666667
 
-[\<\<\< Previous](02-functions.md) | [Next \>\>\>](06-data-structure.md)  
-[Glossary](glossary.md)
+-----
+
+[\<\<\< Previous](02-functions.md) | [Next \>\>\>](06-data-structure.md)
+
+-----
 
 1.  Modified template from [Nice R
     Code](https://nicercode.github.io/guides/functions/) and [Data
