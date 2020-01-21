@@ -66,6 +66,18 @@ We assume no previous knowledge of R or any other programming language with this
 
 ## Sections
 
+[Introduction](sections/01-introduction.md)
+
+[Objects and functions](sections/02-functions.md)
+
+[Vectors and data types](sections/04-vectors.md)
+
+[Data structure](sections/06-data-structure.md)
+
+[Packages](sections/07-packages.md)
+
+[Importing data](sections/08-importing-data.md)
+
 -----
 
 
